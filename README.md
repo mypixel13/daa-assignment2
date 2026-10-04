@@ -21,25 +21,6 @@ results/
   plots/
 ```
 
-## Как собрать и запустить
-
-Нужен JDK 17+ и Maven.
-
-Тесты:
-```
-mvn test
-```
-
-Бенчмарк (пишет `results/results.csv`):
-```
-mvn compile exec:java
-```
-
-Или без Maven:
-```
-javac -d out $(find src/main/java -name "*.java")
-java -cp out bench.Benchmark
-```
 
 ## Что дальше
 
